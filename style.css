@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  rgb(191, 46, 52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.player--1, .player--2{
+    height: 80vh;
+    width: 60vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: white;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+}
+.players-name{
+    font-size: 36px;
+    margin-top: 40px;
+}
+.score-player1, .score-player2{
+    font-size: 72px;
+    color: rgb(191, 46, 52);
+}
+.player--1{
+    margin-left: 10vh;
+    border-radius: 20px 0px 0px 20px;
+}
+.player--2{
+    margin-right: 10vh;
+    border-radius: 0px 20px 20px 0px;
+}
+.selected{
+    opacity: 0.7;
+    font-weight: bolder;
+    transition: all 0.75s;
+}
+.current-dice-face{
+    height: 70px;
+    width: 160px;
+    border-radius: 8px;
+    background-color:  rgb(191, 46, 52);
+    text-align: center;
+    color: white;
+}
+.dice-face{
+    margin-top: 3px;
+    margin: 0;
+    font-size: 16PX;
+    margin-top: 5px;
+}
+.current1, .current2{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.new-game-btn {
+    top: 30vh;
+}
+.roll-dice-btn{
+    top: 60vh;
+}
+.hold-btn{
+    top: 70vh;
+}
+button{
+    position: absolute;
+    left: center;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border-style: none;
+    transition: cursor 0.5s;
+    box-shadow: 0px 0px 10px 1px rgba(191, 46, 52, 0.5);
+    background-color: white;
+    opacity: 0.8;
+}
+button:hover{
+    cursor: pointer;
+}
+.winner{
+    background-color: darkslategrey;
+    opacity: 1;
+    transition: all 0.75s;
+}
+.dice-image{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    position: absolute;
+    left: center;
+    top:  40vh;
+    background-color: white;
+    z-index: 100;
+}
+.hidden{
+    display: none;
+}
